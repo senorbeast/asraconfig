@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:asraconfig/mqtt_utils.dart';
 // import 'package:provider/provider.dart';
 
 void main() {
@@ -35,6 +36,12 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       _counter++;
     });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    main23();
   }
 
   @override
